@@ -92,6 +92,7 @@ MySQL是一个小型跨平台的开源关系型数据库管理系统，与其他
 - 创建数据库：                    CREATE DATABASE  database_name;
 - 删除数据库：                    DROP DATABASE  database_name;
 - 选中数据库：                    USE database_name;
+- 查看当前正在使用的库：  SELECT  DATABASE();
 
 
 
@@ -153,11 +154,13 @@ MySQL是一个小型跨平台的开源关系型数据库管理系统，与其他
 
   - 删除字段：                       ALTER   TABLE   <表名>   DROP   <字段名>
 
-  - 修改字段排列位置：        ALTER   TABLE   <表名>    MODIFY  <字段1>  <数据类型>  FIRST|AFTER <字段2》
+  - 修改字段排列位置：        ALTER   TABLE   <表名>    MODIFY  <字段1>  <数据类型>  FIRST|AFTER <字段2>
 
   - 更改表的存储引擎：        ALTER   TABLE   <表名>    ENGINE=<更改后的存储引擎名>
 
   - 删除表的外键约束：        ALTER   TABLE   <表名>   DROP  FOREIGN   KEY  <外键约束名>
+
+  - 插入数据：                       INSERT  INTO      <表名>  <指定字段集合>  value (指定字段值) 
 
     ​	
 
@@ -167,7 +170,11 @@ MySQL是一个小型跨平台的开源关系型数据库管理系统，与其他
 
   - 删除被其他表关联的主表：如果直接删除父表，会显示失败，因为会破坏表的完整性。可以先删除子表再删除父表，或者删除关联表的外键约束。
 
-    ​                                             
+    ​			   
+  
+  
+  
+  
 
 ### 数据类型和运算符
 
