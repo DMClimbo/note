@@ -77,6 +77,43 @@ unistd.h是unix std的意思，是POSIX标准定义的unix类系统定义符号�
 
 
 
+## 软件安装目录
+
+Linux 的软件安装目录是也是有讲究的，理解这一点，在对系统管理是有益的
+
+`/usr`：系统级的目录，可以理解为`C:/Windows/`，`/usr/lib`理解为`C:/Windows/System32`。
+
+
+`/usr/local`：用户级的程序目录，可以理解为`C:/Progrem Files/`。**用户自己编译的软件默认会安装到这个目录下。**
+
+
+
+`/opt`：用户级的程序目录，可以理解为`D:/Software`，opt有可选的意思，这里可以用于放置第三方大型软件（或游戏），当你不需要时，直接`rm -rf`掉即可。在硬盘容量不够时，也可将/opt单独挂载到其他磁盘上使用。
+
+源码放哪里？
+`/usr/src`：系统级的源码目录。
+`/usr/local/src`：用户级的源码目录。
+
+​	
+
+apt安装后：
+
+  A、下载的软件的存放位置：/var/cache/apt/archives
+
+  B、安装后软件的默认位置：/usr/share
+
+  C、可执行文件位置：/usr/bin
+
+  D、配置文件位置：/etc
+
+   E、lib文件位置：/usr/lib
+
+
+
+
+
+
+
 ## 系统修复 
 
 - Recovery Mode 

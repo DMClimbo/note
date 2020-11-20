@@ -37,3 +37,26 @@
   | -W      | 同-w                                                         |
   | section | 搜索领域【限定手册类型】默认查找所有手册                     |
 
+
+
+​	
+
+## curl命令
+
+curl 是常用的命令行工具，用来请求 Web 服务器。它的名字就是客户端（client）的 URL 工具的意思。
+
+它的功能非常强大，命令行参数多达几十种。如果熟练的话，完全可以取代 Postman 这一类的图形界面工具。
+
+​	
+
+不带有任何参数时，curl 就是发出 GET 请求。
+
+```bash
+$ curl https://www.example.com
+```
+
+上面命令向`www.example.com`发出 GET 请求，服务器返回的内容会在命令行输出。
+
+
+
+[常用参数](http://www.ruanyifeng.com/blog/2019/09/curl-reference.html)
